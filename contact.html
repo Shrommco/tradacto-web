@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Institutional Contact | Tradacto Advisory</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+    <style>
+        :root { --bg-pure: #ffffff; --text-main: #0f172a; --text-muted: #475569; --accent-navy: #1e293b; --border-strict: #cbd5e1; }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Inter', sans-serif; background-color: var(--bg-pure); color: var(--text-main); line-height: 1.6; }
+        h1, h2 { font-family: 'Playfair Display', serif; color: var(--text-main); letter-spacing: -0.02em; }
+        .container { max-width: 1280px; margin: 0 auto; padding: 0 2rem; }
+        
+        header { border-bottom: 2px solid var(--text-main); padding: 2rem 0; margin-bottom: 4rem; display: flex; justify-content: space-between; align-items: flex-end; }
+        .logo { font-size: 2rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.15em; color: var(--text-main); text-decoration: none; }
+        nav { display: flex; gap: 2rem; }
+        nav a { font-size: 0.85rem; font-weight: 600; text-transform: uppercase; text-decoration: none; color: var(--text-muted); letter-spacing: 0.05em; }
+        nav a.active { color: var(--text-main); }
+        .hq-location { font-size: 0.85rem; font-weight: 600; text-transform: uppercase; color: var(--text-muted); }
+
+        .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 6rem; margin-bottom: 6rem; }
+        .contact-info h1 { font-size: clamp(2.5rem, 4vw, 3.5rem); margin-bottom: 1.5rem; }
+        .contact-info p { font-size: 1.1rem; color: var(--text-muted); margin-bottom: 2rem; }
+        .direct-email { font-family: 'Playfair Display', serif; font-size: 1.5rem; color: var(--text-main); text-decoration: none; border-bottom: 2px solid var(--text-main); padding-bottom: 0.25rem; display: inline-block; margin-bottom: 3rem; }
+        
+        .office-list { border-top: 1px solid var(--border-strict); }
+        .office { padding: 1.5rem 0; border-bottom: 1px solid var(--border-strict); display: flex; justify-content: space-between; font-size: 0.95rem; }
+        .office span:last-child { color: var(--text-muted); }
+
+        .notice-box { background-color: #f8fafc; border: 1px solid var(--border-strict); padding: 2.5rem; }
+        .notice-box h3 { font-size: 1.3rem; margin-bottom: 1rem; text-transform: uppercase; }
+        .notice-box p { color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1.5rem; }
+
+        footer { background-color: var(--accent-navy); color: #f1f5f9; padding: 5rem 0; }
+        .footer-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; border-bottom: 1px solid #475569; padding-bottom: 3rem; margin-bottom: 3rem; }
+        .footer-col h4 { color: #ffffff; font-size: 1.2rem; margin-bottom: 1.5rem; }
+        .footer-col p, .footer-col a { color: #94a3b8; font-size: 0.9rem; text-decoration: none; display: block; margin-bottom: 0.5rem; }
+        .legal { font-size: 0.8rem; color: #64748b; display: flex; justify-content: space-between; }
+
+        @media(max-width: 900px) { .contact-grid { grid-template-columns: 1fr; gap: 3rem; } header { flex-direction: column; align-items: flex-start; gap: 1rem; } nav { flex-wrap: wrap; gap: 1rem; } }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="index.html" class="logo">Tradacto</a>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="governance.html">Governance</a>
+                <a href="contact.html" class="active">Contact</a>
+            </nav>
+            <span class="hq-location">Gothenburg | Mumbai | Houston</span>
+        </header>
+
+        <div class="contact-grid">
+            <div class="contact-info">
+                <h1>Direct Institutional Inquiries.</h1>
+                <p>We engage exclusively with Private Equity investment committees, U.S. data center developers, and Tier-1/Tier-2 EPC procurement leadership.</p>
+                <a href="mailto:hari@tradacto.com" class="direct-email">hari@tradacto.com</a>
+
+                <div class="office-list">
+                    <div class="office">
+                        <span>European Headquarters</span>
+                        <span>Gothenburg, Sweden</span>
+                    </div>
+                    <div class="office">
+                        <span>Maritime & Logistics Command</span>
+                        <span>Mumbai, India</span>
+                    </div>
+                    <div class="office">
+                        <span>U.S. Infrastructure Interface</span>
+                        <span>Houston, Texas</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="notice-box">
+                <h3>Mandatory Onboarding Protocol</h3>
+                <p>To protect intellectual property and comply with international trade finance regulations, all incoming inquiries regarding Large Power Transformer (LPT) foundry slot allocation must originate from corporate email domains representing qualified infrastructure developers or EPC contractors.</p>
+                <p>Unsolicited retail, recruitment, or non-institutional communications will not be processed.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Direct Inquiries</h4>
+                    <a href="mailto:hari@tradacto.com">hari@tradacto.com</a>
+                    <p>Strictly for institutional capital, EPC procurement, and infrastructure private equity engagements.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Corporate Governance</h4>
+                    <p>Tradacto operates under Swedish corporate jurisdiction, guaranteeing strict European compliance, anti-corruption transparency, and institutional financial auditing standards.</p>
+                </div>
+            </div>
+            <div class="legal">
+                <span>&copy; 2026 Tradacto. All Rights Reserved.</span>
+                <span>Gothenburg, Västra Götaland County, Sweden.</span>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
