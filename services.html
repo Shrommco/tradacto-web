@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | Tradacto Advisory</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+    <style>
+        :root { --bg-pure: #ffffff; --text-main: #0f172a; --text-muted: #475569; --accent-navy: #1e293b; --border-strict: #cbd5e1; }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Inter', sans-serif; background-color: var(--bg-pure); color: var(--text-main); line-height: 1.6; }
+        h1, h2, h3 { font-family: 'Playfair Display', serif; color: var(--text-main); letter-spacing: -0.02em; }
+        .container { max-width: 1280px; margin: 0 auto; padding: 0 2rem; }
+        
+        header { border-bottom: 2px solid var(--text-main); padding: 2rem 0; margin-bottom: 4rem; display: flex; justify-content: space-between; align-items: flex-end; }
+        .logo { font-size: 2rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.15em; color: var(--text-main); text-decoration: none; }
+        nav { display: flex; gap: 2rem; }
+        nav a { font-size: 0.85rem; font-weight: 600; text-transform: uppercase; text-decoration: none; color: var(--text-muted); letter-spacing: 0.05em; }
+        nav a.active { color: var(--text-main); }
+        .hq-location { font-size: 0.85rem; font-weight: 600; text-transform: uppercase; color: var(--text-muted); }
+
+        .page-header { margin-bottom: 5rem; max-width: 900px; }
+        .page-header h1 { font-size: clamp(2.5rem, 4vw, 4rem); margin-bottom: 1.5rem; }
+        .page-header p { font-size: 1.2rem; color: var(--text-muted); border-left: 3px solid var(--accent-navy); padding-left: 1.5rem; }
+
+        .service-block { border-top: 1px solid var(--border-strict); padding: 4rem 0; display: grid; grid-template-columns: 1fr 2fr; gap: 4rem; }
+        .service-meta span { font-size: 0.85rem; font-weight: 600; text-transform: uppercase; color: var(--text-muted); letter-spacing: 0.1em; display: block; margin-bottom: 1rem; }
+        .service-meta h2 { font-size: 2rem; }
+        .service-content p { font-size: 1.05rem; color: var(--text-muted); margin-bottom: 1.5rem; }
+        .spec-list { list-style: none; margin-top: 2rem; border-top: 1px solid var(--border-strict); }
+        .spec-list li { padding: 1rem 0; border-bottom: 1px solid var(--border-strict); font-size: 0.95rem; font-weight: 500; display: flex; justify-content: space-between; }
+        .spec-list li span { color: var(--text-muted); font-weight: 400; }
+
+        footer { background-color: var(--accent-navy); color: #f1f5f9; padding: 5rem 0; margin-top: 6rem; }
+        .footer-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; border-bottom: 1px solid #475569; padding-bottom: 3rem; margin-bottom: 3rem; }
+        .footer-col h4 { color: #ffffff; font-size: 1.2rem; margin-bottom: 1.5rem; }
+        .footer-col p, .footer-col a { color: #94a3b8; font-size: 0.9rem; text-decoration: none; display: block; margin-bottom: 0.5rem; }
+        .legal { font-size: 0.8rem; color: #64748b; display: flex; justify-content: space-between; }
+
+        @media(max-width: 900px) { .service-block { grid-template-columns: 1fr; gap: 2rem; } header { flex-direction: column; align-items: flex-start; gap: 1rem; } nav { flex-wrap: wrap; gap: 1rem; } }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="index.html" class="logo">Tradacto</a>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="services.html" class="active">Services</a>
+                <a href="governance.html">Governance</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <span class="hq-location">Gothenburg | Mumbai | Houston</span>
+        </header>
+
+        <div class="page-header">
+            <h1>Institutional Advisory Capabilities.</h1>
+            <p>Bypassing Tier-1 manufacturing bottlenecks through rigorous European engineering compliance, marine risk mitigation, and secure trade finance architecture.</p>
+        </div>
+
+        <!-- Service 1 -->
+        <div class="service-block" id="audit">
+            <div class="service-meta">
+                <span>Core Pillar 01</span>
+                <h2>Heavy Electrical Technical Auditing</h2>
+            </div>
+            <div class="service-content">
+                <p>Tier-2 and Tier-3 Asian heavy electrical foundries possess immense unallocated manufacturing capacity for Large Power Transformers (LPTs). However, U.S. EPC procurement desks and Private Equity compliance committees cannot bypass Approved Vendor Lists (AVLs) without institutional-grade validation.</p>
+                <p>Tradacto deploys independent Swedish electrical engineers to conduct rigorous pre-qualification audits, material traceability checks, and full Factory Acceptance Testing (FAT) directly on foundry floors in Asia.</p>
+                <ul class="spec-list">
+                    <li>Compliance Benchmark <span>IEEE C57.12.00 & UL Standards</span></li>
+                    <li>Core Inspection <span>Magnetic Core Stacking & Dielectric Testing</span></li>
+                    <li>Deliverable <span>Bankable Due Diligence & Audit Dossier</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="service-block" id="marine">
+            <div class="service-meta">
+                <span>Core Pillar 02</span>
+                <h2>Heavy-Lift Project Cargo & Marine Risk</h2>
+            </div>
+            <div class="service-content">
+                <p>Transporting a 200+ ton Large Power Transformer from an inland Asian foundry to a U.S. Gulf Coast data center pad or LNG export terminal introduces catastrophic logistical tail-risk if mismanaged.</p>
+                <p>Commanded by a 20-year VLCC Master Mariner, our marine logistics engine engineers every phase of transit—eliminating port-draft bottlenecks, securing geared heavy-lift vessel charters, and insulating cargo underwritten by premier marine underwriters.</p>
+                <ul class="spec-list">
+                    <li>Route Engineering <span>Origin-to-Pad Multimodal Survey</span></li>
+                    <li>Vessel Chartering <span>Geared Heavy-Lift Project Carriers</span></li>
+                    <li>Risk Isolation <span>Comprehensive Marine Hull & Cargo Insurance</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="service-block" id="finance">
+            <div class="service-meta">
+                <span>Core Pillar 03</span>
+                <h2>Foundry Slot Origination & Trade Finance</h2>
+            </div>
+            <div class="service-content">
+                <p>We eliminate counterparty and currency risk through institutional trade finance structuring. By utilizing back-to-back, UCP 600 compliant Letters of Credit (LCs), we secure production slots without exposing client capital to foreign exchange volatility or insolvency risk.</p>
+                <p>Our dual-entity structure (Swedish Holding Company + Maritime Operations) captures a clean net spread per transformer unit upon verified delivery while shielding U.S. buyers from direct cross-border friction.</p>
+                <ul class="spec-list">
+                    <li>Financial Instrument <span>UCP 600 Transferable & Back-to-Back LCs</span></li>
+                    <li>Regulatory Framework <span>Swedish Corporate Jurisdiction</span></li>
+                    <li>Spread Capture <span>Optimized $3M–$4M Unit Arbitrage</span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Direct Inquiries</h4>
+                    <a href="mailto:hari@tradacto.com">hari@tradacto.com</a>
+                    <p>Strictly for institutional capital, EPC procurement, and infrastructure private equity engagements.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Corporate Governance</h4>
+                    <p>Tradacto operates under Swedish corporate jurisdiction, guaranteeing strict European compliance, anti-corruption transparency, and institutional financial auditing standards.</p>
+                </div>
+            </div>
+            <div class="legal">
+                <span>&copy; 2026 Tradacto. All Rights Reserved.</span>
+                <span>Gothenburg, Västra Götaland County, Sweden.</span>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
